@@ -32,3 +32,19 @@
 内容以 408 的经典模型和考查范围为主；不同 CPU 架构的具体行为可能不同，以考试教材和题目约定为准。页面对 2021 年“进入中断响应周期时 CPU 开中断”的表述标注了教材判题语境与严格解释之间的歧义。
 
 更多说明见 [README.txt](README.txt)。
+
+
+## 网站访问统计
+
+线上版本使用免费的Cloudflare Web Analytics，网站仍部署在GitHub Pages。进入自己的Cloudflare账号，在Observability → Analytics → Web analytics中选择`szpiss.github.io`查看。用Path筛选对应站点：
+
+- 中断站：`/408-interrupt-learning-site/`（或`/408-interrupt-learning-site/index.html`）。
+- 信号量站：`/408-semaphore-learning-site/`（或`/408-semaphore-learning-site/index.html`）。
+
+本次只统计完整页面加载，不把章节切换、翻卡片或每次答题重复计为一次页面浏览。数据从接入后开始，不能补回历史访问；Cloudflare的Visits是服务自身定义的访问指标，并非精确去重人数。界面通常有数分钟延迟，浏览器拦截或网络异常可造成漏计。
+
+脚本仅在`https://szpiss.github.io`的两个指定站点路径加载，file://、本地预览及其他域名均不加载。尊重浏览器Do Not Track与Global Privacy Control。网站不上传本机的学习进度、笔记、答题或错题内容。
+
+全部学习功能仍可离线运行；Cloudflare脚本不是学习功能的运行依赖。网页里的Cloudflare站点标识是公开的统计配置，不是账户API密钥。请勿把Cloudflare账户API密钥或登录信息提交到仓库。
+
+维护时请保留线上加载条件；如果调整信号量站的Content Security Policy，必须继续允许官方统计脚本地址和官方数据接收端点。
