@@ -2,6 +2,10 @@
 
 面向考研 408 的中断与异常交互学习页面，串联计算机组成原理与操作系统中的相关知识点。
 
+## 在线学习
+
+[直接打开学习站](https://szpiss.github.io/408-interrupt-learning-site/)，无需下载或登录 GitHub。
+
 ## 下载与使用
 
 1. 点击仓库页面的 **Code → Download ZIP**，或[直接下载 ZIP](https://github.com/Szpiss/408-interrupt-learning-site/archive/refs/heads/main.zip)。
